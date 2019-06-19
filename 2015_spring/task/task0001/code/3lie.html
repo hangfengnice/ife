@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      /* .container{
+        display: flex;
+
+      }
+      .left{
+        background-color: green;
+        flex-basis: 100px;
+        height: 500px;
+
+        
+      }
+      .main{
+        background-color: red;
+        height: 500px;
+        flex: 10;
+         
+      }
+      .right{
+        background-color: yellow;
+        flex-basis: 100px;
+        height: 500px;
+
+      } */
+      /* .container {
+        position: relative;
+      }
+      .left {
+        background-color: green;
+        left: 0;
+        height: 500px;
+        position: absolute;
+        width: 100px;
+      }
+      .main {
+        background-color: red;
+        height: 500px;
+        position: absolute;
+        left: 100px;
+        width: calc(100% - 200px);
+      }
+      .right {
+        background-color: yellow;
+        position: absolute;
+        height: 500px;
+        width: 100px;
+        right: 0;
+      } */
+      .container {
+        overflow: hidden;
+      }
+      .left {
+        background-color: green;
+
+        height: 500px;
+        float: left;
+        width: 100px;
+      }
+      .main {
+        background-color: red;
+        height: 500px;
+       float: left;
+        width: calc(100% - 200px);
+      }
+      .right {
+        background-color: yellow;
+
+        height: 500px;
+        width: 100px;
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left"></div>
+      <div class="main"></div>
+      <div class="right"></div>
+    </div>
+  </body>
+</html>
