@@ -1,0 +1,174 @@
+*{
+  box-sizing: border-box;
+}
+.header{
+  background-color: purple;
+  height: 80px;
+  overflow: hidden;
+  position: relative;
+  /* width: 100%; */
+
+}
+.header-content{
+  /* background-color: purple; */
+  margin: 0 auto;
+  width: 980px;
+  /* display: inline-block; */
+
+}
+.header-content img{
+
+position: absolute;
+right: 0;
+top: 40px;
+  
+}
+.header-bottom{
+  /* display: inline-block; */
+  position: relative;
+
+
+}
+.header-bottom h1{
+  display: inline-block;
+
+}
+.header-bottom ul{
+  display: inline-block;
+  list-style: none;
+  position: absolute;
+  right: 0;
+  bottom: 4px;
+
+
+}
+.header-bottom li{
+  display: inline-block;
+}
+
+/* 主题 */
+
+main{
+  padding: 20px 0 60px;
+  background-color: #eee;
+}
+
+.wrap{
+  width: 980px;
+  margin: 0 auto;
+  display: flex;
+}
+article{
+  width: 710px;
+  margin-right: 10px;
+  /* border: 1px solid #000
+  ;
+   */
+
+}
+
+article div{
+  background-color: #fff;
+  padding: 10px;
+  position: relative;
+  margin-bottom: 15px;
+
+}
+article div h1{
+  font-size: 16px;
+
+}
+article div h2{
+  font-size: 12px;
+  color: #666;
+}
+article div p{
+  text-indent: 2rem;
+}
+article div .last-p{
+  text-align: right;
+}
+article div::before{
+  content:'4.12';
+  display: block;
+  position: absolute;
+  width: 40px;
+  background-color: purple;
+  left: -40px;
+  text-align: center;
+}
+article div::after{
+  content:'css';
+  display: block;
+  position: absolute;
+  width: 40px;
+
+  background-color: rgb(196, 172, 196);
+  left: -40px;
+  top: 32px;
+  text-align: center;
+
+}
+
+/* aside */
+aside{
+  width: 260px;
+  /* border: 1px solid red; */
+  /* text-align: center; */
+  padding-left: 10px;
+}
+aside  .list{
+  margin-top: 5px;
+  background-color: #fff;
+}
+aside  .list ul{
+  list-style: none;
+  padding: 0;
+}
+aside  .list ul li{
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  border-left: 3px solid purple;
+}
+aside  .list ul li:active,
+aside  .list ul li:hover{
+
+  border-left: 3px solid black;
+}
+aside .tags{
+  /* padding: 10px; */
+  padding: 5px;
+  margin-top: 5px;
+  background-color: #fff;
+}
+aside  .date h6{
+
+  padding-left: 5px;
+}
+main .pages div{
+  /* position: relative; */
+  margin-left: 25%;
+
+}
+
+main .pages div span{
+  background-color: #fff;
+  margin-left: 5px;
+  padding: 5px 10px;
+}
+main .pages div span:hover{
+  background-color: purple;
+
+}
+main .pages div .active{
+  background-color: purple;
+
+}
+
+
+
+
+
+
+
+

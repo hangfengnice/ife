@@ -8,24 +8,24 @@ function isFunction(fn){
 
 // deepClone
 
-function cloneObject(src){
-  var result = src;
-  if(Object.prototype.toString.call(src) === "[object Array]" ){
-     result = [];
-    var resultLength = 0;
-    for(var i = 0; i < src.length; i ++){
-      result[resultLength++] = cloneObject(src[i])
-    }
-  }else if(Object.prototype.toString.call(src) === "[object Object]" ){
-    result = {};
-    for(var i in src){
-      if (src.hasOwnProperty(i)) {
-        result[i] = cloneObject(src[i]);
-    }
-    }
-  }
-  return result
-}
+// function cloneObject(src){
+//   var result = src;
+//   if(Object.prototype.toString.call(src) === "[object Array]" ){
+//      result = [];
+//     var resultLength = 0;
+//     for(var i = 0; i < src.length; i ++){
+//       result[resultLength++] = cloneObject(src[i])
+//     }
+//   }else if(Object.prototype.toString.call(src) === "[object Object]" ){
+//     result = {};
+//     for(var i in src){
+//       if (src.hasOwnProperty(i)) {
+//         result[i] = cloneObject(src[i]);
+//     }
+//     }
+//   }
+//   return result
+// }
 var srcObj = {
   a: 1,
   b: {
@@ -44,3 +44,4 @@ console.log(abObj.b.b1[0]);
 
 console.log(tarObj.a);      // 1
 console.log(tarObj.b.b1[0]); 
+
