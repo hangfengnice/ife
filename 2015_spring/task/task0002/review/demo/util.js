@@ -82,4 +82,30 @@ function getObjectLength(obj){
   
 }
 
+function hasClass(element, newClassName){
+  return element.className.match(new RegExp('\\s' + newClassName + '\\s'))
+}
+
+function addClass(element, newClassName){
+  if(!hasClass(element, newClassName)){
+    // element.classList.add(newClassName)
+    element.className += " newClassName"
+  }
+}
+
+function removeClass(element, oldClassName){
+  if(!hasClass(element, oldClassName)){
+    // element.classList.add(newClassName)
+   element.className = element.className.replace(new RegExp('\\s' + oldClassName + '\\s'), '')
+  }
+}
+
+function isSiblingNode(element, siblingNode){
+  return element.parentNode == siblingNode.parentNode
+}
+
+function getPositin(element){
+
+}
+
 
