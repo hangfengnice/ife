@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+          *{
+            margin: 0;
+            padding: 0;
+
+          }
+          header{
+            background-color: purple;
+            height: 80px;
+          }
+          .header-content{
+            width :980px;
+            margin: 0 auto;
+          }
+          .header-bottom{
+            position: relative;
+            top: 35px;
+
+          }
+          header .list{
+            list-style: none;
+            padding: 0;
+
+          }
+          header .list{
+            position: absolute;
+            right: 0;
+            bottom: 8px;
+          }
+          header .list li{
+            float: left;
+          }
+          main{
+            background-color: #eee;
+            padding-top: 10px;
+            padding-bottom: 60px;
+
+
+          }
+          main .wrap{
+            width: 980px;
+            margin: 0 auto;
+            display: flex;
+          }
+          article{
+            flex-basis: 600px;
+            margin-right: 10px;
+      /* border: 1px solid #000; */
+          }
+          aside{
+            flex-basis: 270px;
+            /* border: 1px solid #000; */
+
+          }
+          nav ul li{
+            border-right: 1px solid #eee;
+            background-color: #fff;
+          }
+          nav ul li:nth-of-type(1){
+            border-top: 2px solid lightpurple;
+          }
+          nav ul li:nth-of-type(2){
+            border-top: 2px solid black;
+          }
+          nav ul li:nth-of-type(3){
+            border-top: 2px solid purple;
+          }
+          nav ul li:nth-of-type(4){
+            border-top: 2px solid orange;
+          }
+          nav ul li:nth-of-type(5){
+            border-top: 2px solid darkorange;
+          }
+          nav ul{
+            list-style: none;
+            padding: 0;
+            overflow: hidden;
+          }
+          nav ul li{
+            float: left;
+            padding: 5px;
+
+          }
+          article .pic{
+            padding: 10px;
+            background-color: #fff;
+          }
+          article p{
+          background-color: #fff;
+          text-align: center;
+          margin-bottom: 13px;
+
+        }
+        aside{
+          padding-top: 20px;
+        }
+        aside .search{
+          padding: 20px;
+        }
+        aside .btn{
+          background-color: #111;
+          color: #fff;
+        }
+       aside .app{
+         margin-top: 10px;
+         padding: 15px;
+
+       }
+       aside .app .span{
+         padding: 0 7px;
+       }
+       aside .app span{
+         background-color: purple;
+         border-radius: 3px;
+         padding: 5px;
+       }
+       aside .app meter{
+         color: purple;
+       }
+       .pic{
+         column-count: 3;
+       }
+       .pic div{
+         margin-bottom: 10px;
+       }
+       .small{
+         width: 200px;
+         height: 50px;
+         background-color: blue;
+       }
+       .mid{
+         width: 200px;
+         height: 70px;
+         background-color: red;
+
+       }
+       .big{
+         width: 200px;
+         height: 90px;
+         background-color: yellow;
+
+       }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="cntainer">
+        <div class="header-content">
+          <div class="header-bottom">
+            <h1 div class="logo">Polande</h1>
+            <ul class="list">
+              <li><a href="index.html">关于</a></li>
+              <li><a href="index.html">作品</a></li>
+              <li><a href="index.html">文章</a></li>
+              <li><a href="index.html">首页</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="wrap">
+        <article>
+          <nav>
+            <ul>
+              <li>all</li>
+              <li>javascript util function</li>
+              <li>uil components</li>
+              <li>framework</li>
+              <li>aplic ations</li>
+            </ul>
+          </nav>
+          <div class="pic">
+            <div class="small">
+
+            </div>
+            <div class="mid">
+
+            </div>
+            <div class="big"></div>
+            <div class="mid">
+
+              </div>
+              <div class="big"></div>
+              <div class="mid">
+
+                </div>
+                <div class="big"></div>
+                <div class="mid">
+
+                  </div>
+                  <div class="big"></div>
+          </div>
+          <p>点击查看更多</p>
+        </article>
+        <aside>
+          <div class="search">
+            <input type="text" placeholder="Heywords" />
+            <button class="btn">Go</button>
+          </div>
+          <div class="app">
+            <h6>人气排行榜</h6>
+            <p><span class='span'>1</span> <meter max='100' min = '0' value='100'></meter> ui tree
+            </p>
+            <p><span>2</span> <meter max='100' min = '0' value='90'></meter> ui trim
+            </p>
+            <p><span>3</span> <meter max='100' min = '0' value='70'></meter> app todo
+            </p>
+            <p><span>4</span> <meter max='100' min = '0' value='50'></meter> ui tab
+            </p>
+            <p><span>5</span> <meter max='100' min = '0' value='30'></meter> ui addclass
+            </p>
+          </div>
+        </aside>
+      </div>
+    </main>
+  </body>
+</html>
